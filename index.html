@@ -52,6 +52,78 @@
                 <li><a href="#tab-owner" data-toggle="tab">Owner</a>
                 </li>
             </ul>
+            <!-- [1] http://jsfiddle.net/5XM3J/ To open a modal dialog on click of a button.-->
+            <div class="modal" id="editReservation" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="label" style="text-align:center">Change Reservation</h3>
+                        </div>
+                        <div class="modal-body">
+                            <h4 style="text-align:center">Reservation Details</h4>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="confirmationNumber">Confirmation Number</label>
+                                    <input type="confirmNumber" class="form-control" id="confirmationNumberEditReservation" placeholder="Confirmation Number" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reservationStatus">Reservation Status</label>
+                                    <input type="reserveStatus" class="form-control" id="reservationStatus" placeholder="Reservation Status" readonly>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="reserveDate">Date</label>
+                                            <input type="date" class="form-control" id="reserveDateEditReservation" placeholder="MM/DD/YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="reserveTime">Time</label>
+                                            <input type="time" class="form-control" id="reserveTimeEditReservation" placeholder="HH:MM">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reserveName">Name</label>
+                                    <input type="text" class="form-control" id="reserveNameEditReservation" placeholder="Enter Your Name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reservePhone">Phone</label>
+                                    <input type="tel" class="form-control" id="reservePhoneEditReservation" placeholder="Enter Your Phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reserveEmail">Email</label>
+                                    <input type="email" class="form-control" id="reserveEmailEditReservation" placeholder="example@domain.com">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="reserveSize">Party Size</label>
+                                            <input type="number" class="form-control" id="reserveSizeEditReservation" placeholder="# Guests">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="form-group">
+                                            <label for="reserveSpecial">Special Need</label>
+                                            <input type="email" class="form-control" id="reserveSpecialEditReservation" placeholder="e.g. Birthday, Anniversary etc.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn large-btn btn-primary">Update Reservation</button>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-default" data-dismiss="modal">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="content" class="tab-content">
                 <div class="tab-pane active" id="tab-guest">
                     <h6>Make a Reservation</h6>
@@ -112,7 +184,7 @@
                             <input type="confirmationNumber" class="form-control" id="confirmationNumber" placeholder="Confirmation Number">
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn large-btn btn-primary">Submit</button>
+                            <a class="btn btn-primary" href="#editReservation" data-toggle="modal">Submit</a>
                         </div>
                     </form>
                 </div>

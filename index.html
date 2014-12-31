@@ -47,6 +47,8 @@
             <ul class="nav nav-tabs nav-justified">
                 <li class="active"><a href="#tab-guest" data-toggle="tab">Guest</a>
                 </li>
+                <li><a href="#tab-edit-reservation" data-toggle="tab">Edit Reservation</a>
+                </li>
                 <li><a href="#tab-owner" data-toggle="tab">Owner</a>
                 </li>
             </ul>
@@ -98,10 +100,23 @@
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn large-btn btn-primary">Reserve</button>
-                            <button type="button" class="btn btn-link">Change Existing Reservation?</button>
                         </div>
                     </form>
                 </div>
+
+                <div class="tab-pane" id="tab-edit-reservation">
+                    <h6>Change Existing Reservation</h6>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="confirmationNumber">Confirmation Number</label>
+                            <input type="confirmationNumber" class="form-control" id="confirmationNumber" placeholder="Confirmation Number">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn large-btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
                 <div class="tab-pane" id="tab-owner">
                     <h6>Login</h6>
                     <form role="form">

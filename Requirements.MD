@@ -3,4 +3,9 @@ Edit/Cancel a Reservation
 1. Customer clicks on the change reservation status.
 2. A Dialog box opens up that requests for the confirmation number.
 		Dialog box must contain a submit button
-		If the reservation is found then display the same guest form with all the info populated.
+			If the reservation is found then display the same guest form with all the info populated.
+				take the updated info from the user and update the reservation.
+			Have a button to cancel it.
+				cancel the reservation and notify the user it has been deleted.
+
+

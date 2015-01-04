@@ -131,7 +131,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -143,7 +143,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -155,7 +155,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -167,7 +167,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -179,7 +179,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -191,7 +191,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -203,7 +203,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -215,7 +215,7 @@
                                 <td>05/10/2014 1:30PM</td>
                                 <td>4</td>
                                 <td>
-                                    <button class="btn btn-primary" title="Open Details">
+                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
                                         <span class="glyphicon glyphicon-share"></span>
                                         <span class="btn-text">Details</span>
                                     </button>
@@ -369,6 +369,64 @@
     </section>
     <footer></footer>
 
+    <dialog id="myDialog"><h4 style="text-align:center">Reservation Details</h4>
+        <form role="form">
+            <div class="form-group">
+                <label for="confirmationNumber">Confirmation Number</label>
+                <input type="confirmNumber" class="form-control" id="confirmationNumberEditReservation" placeholder="Confirmation Number" readonly>
+            </div>
+            <div class="form-group">
+                <label for="reservationStatus">Reservation Status</label>
+                <input type="reserveStatus" class="form-control" id="reservationStatus" placeholder="Reservation Status" readonly>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="reserveDate">Date</label>
+                        <input type="date" class="form-control" id="reserveDateEditReservation" placeholder="MM/DD/YYYY">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="reserveTime">Time</label>
+                        <input type="time" class="form-control" id="reserveTimeEditReservation" placeholder="HH:MM">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reserveName">Name</label>
+                <input type="text" class="form-control" id="reserveNameEditReservation" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-group">
+                <label for="reservePhone">Phone</label>
+                <input type="tel" class="form-control" id="reservePhoneEditReservation" placeholder="Enter Your Phone">
+            </div>
+            <div class="form-group">
+                <label for="reserveEmail">Email</label>
+                <input type="email" class="form-control" id="reserveEmailEditReservation" placeholder="example@domain.com">
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="reserveSize">Party Size</label>
+                        <input type="number" class="form-control" id="reserveSizeEditReservation" placeholder="# Guests">
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="form-group">
+                        <label for="reserveSpecial">Special Need</label>
+                        <input type="email" class="form-control" id="reserveSpecialEditReservation" placeholder="e.g. Birthday, Anniversary etc.">
+                    </div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn large-btn btn-primary">Update Reservation</button>
+                <button type="cancel" class="btn large-btn btn-primary">Cancel Reservation</button>
+            </div>
+        </form></dialog>
+
     <!-- JavaScripts libraries-->
     <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
@@ -376,7 +434,7 @@
         <!--
         function viewDetails()
         {
-            alert("Hello World!")
+            document.getElementById("myDialog").showModal();
         }
         //-->
     </script>

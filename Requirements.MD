@@ -7,5 +7,6 @@ Edit/Cancel a Reservation
 				take the updated info from the user and update the reservation.
 			Have a button to cancel it.
 				cancel the reservation and notify the user it has been deleted.
+3. Owner clicks on the details tab, a form with all the information from the reservation status should be displayed.
 
 

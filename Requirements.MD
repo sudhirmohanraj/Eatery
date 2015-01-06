@@ -10,4 +10,4 @@ Edit/Cancel a Reservation
 3. Owner clicks on the details tab, a form with all the information from the reservation status should be displayed.
    Similarly on confirmation tab.
    App Settings Added functionality to add a user as proxy.
-
+   Contacts tab has two ways of looking up a customer either by using alphabets or entering the customer name.

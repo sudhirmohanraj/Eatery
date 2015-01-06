@@ -1,133 +1,221 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Eatery</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
-    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Eatery</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
 
-<body>
-    <header>
-        <div class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <span class="glyphicon glyphicon-cutlery"></span>Eatery</a>
-                </div>
-                <div class="navbar-collapse collapse" style="height: 1px;">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link1</a>
-                        </li>
-                        <li><a href="#">Link2</a>
-                        </li>
-                    </ul>
+    <body>
+        <header>
+            <div class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-cutlery"></span>Eatery</a>
+                    </div>
+                    <div class="navbar-collapse collapse" style="height: 1px;">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link1</a>
+                            </li>
+                            <li><a href="#">Link2</a>
+                            </li>
+                        </ul>
 
 
-                </div>
-                <!--/.navbar-collapse -->
-            </div>
-        </div>
-    </header>
-
-    <section>
-        <div class="container" id="home">
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#tab-guest" data-toggle="tab">Guest</a>
-                </li>
-                <li><a href="#tab-owner" data-toggle="tab">Owner</a>
-                </li>
-            </ul>
-            <div id="content" class="tab-content">
-                <div class="tab-pane active" id="tab-guest">
-                    <h6>Make a Reservation</h6>
-                    <form role="form">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="reserveDate">Date</label>
-                                    <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="reserveTime">Time</label>
-                                    <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="reserveName">Name</label>
-                            <input type="text" class="form-control" id="reserveName" placeholder="Enter Your Name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="reservePhone">Phone</label>
-                            <input type="tel" class="form-control" id="reservePhone" placeholder="Enter Your Phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="reserveEmail">Email</label>
-                            <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <label for="reserveSize">Party Size</label>
-                                    <input type="number" class="form-control" id="reserveSize" placeholder="# Guests">
-                                </div>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="form-group">
-                                    <label for="reserveSpecial">Special Need</label>
-                                    <input type="email" class="form-control" id="reserveSpecial" placeholder="e.g. Birthday, Anniversary etc.">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn large-btn btn-primary">Reserve</button>
-                            <button type="button" class="btn btn-link">Change Existing Reservation?</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane" id="tab-owner">
-                    <h6>Login</h6>
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@domain.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn large-btn btn-primary">Submit</button>
-                            <button type="button" class="btn btn-link">Forgot Password?</button>
-                        </div>
-                    </form>
+                    </div>
+                    <!--/.navbar-collapse -->
                 </div>
             </div>
-        </div>
-    </section>
-    <footer></footer>
+        </header>
 
-    <!-- JavaScripts libraries-->
-    <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+        <section>
+            <div class="container" id="home">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#tab-guest" data-toggle="tab">Guest</a>
+                    </li>
+                    <li><a href="#tab-edit-reservation" data-toggle="tab">Edit Reservation</a>
+                    </li>
+                    <li><a href="#tab-owner" data-toggle="tab">Owner</a>
+                    </li>
+                </ul>
+                <!-- [1] http://jsfiddle.net/5XM3J/ To open a modal dialog on click of a button.-->
+                <div class="modal" id="editReservation" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="label" style="text-align:center">Change Reservation</h3>
+                            </div>
+                            <div class="modal-body">
+                                <h4 style="text-align:center">Reservation Details</h4>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="confirmationNumber">Confirmation Number</label>
+                                        <input type="confirmNumber" class="form-control" id="confirmationNumberEditReservation" placeholder="Confirmation Number" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reservationStatus">Reservation Status</label>
+                                        <input type="reserveStatus" class="form-control" id="reservationStatus" placeholder="Reservation Status" readonly>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="reserveDate">Date</label>
+                                                <input type="date" class="form-control" id="reserveDateEditReservation" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="reserveTime">Time</label>
+                                                <input type="time" class="form-control" id="reserveTimeEditReservation" placeholder="HH:MM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reserveName">Name</label>
+                                        <input type="text" class="form-control" id="reserveNameEditReservation" placeholder="Enter Your Name">
+                                    </div>
 
-</body>
+                                    <div class="form-group">
+                                        <label for="reservePhone">Phone</label>
+                                        <input type="tel" class="form-control" id="reservePhoneEditReservation" placeholder="Enter Your Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reserveEmail">Email</label>
+                                        <input type="email" class="form-control" id="reserveEmailEditReservation" placeholder="example@domain.com">
+                                    </div>
 
-</html>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label for="reserveSize">Party Size</label>
+                                                <input type="number" class="form-control" id="reserveSizeEditReservation" placeholder="# Guests">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="form-group">
+                                                <label for="reserveSpecial">Special Need</label>
+                                                <input type="email" class="form-control" id="reserveSpecialEditReservation" placeholder="e.g. Birthday, Anniversary etc.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                        <button type="submit" class="btn large-btn btn-primary">Update Reservation</button>
+                                        <button type="cancel" class="btn large-btn btn-primary">Cancel Reservation</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-default" data-dismiss="modal">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content" class="tab-content">
+                    <div class="tab-pane active" id="tab-guest">
+                        <h6>Make a Reservation</h6>
+                        <form role="form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="reserveDate">Date</label>
+                                        <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="reserveTime">Time</label>
+                                        <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="reserveName">Name</label>
+                                <input type="text" class="form-control" id="reserveName" placeholder="Enter Your Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reservePhone">Phone</label>
+                                <input type="tel" class="form-control" id="reservePhone" placeholder="Enter Your Phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="reserveEmail">Email</label>
+                                <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="reserveSize">Party Size</label>
+                                        <input type="number" class="form-control" id="reserveSize" placeholder="# Guests">
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="form-group">
+                                        <label for="reserveSpecial">Special Need</label>
+                                        <input type="email" class="form-control" id="reserveSpecial" placeholder="e.g. Birthday, Anniversary etc.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn large-btn btn-primary">Reserve</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane" id="tab-edit-reservation">
+                        <h6>Change Existing Reservation</h6>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="confirmationNumber">Confirmation Number</label>
+                                <input type="confirmationNumber" class="form-control" id="confirmationNumber" placeholder="Confirmation Number">
+                            </div>
+                            <div class="text-center">
+                                <a class="btn btn-primary" href="#editReservation" data-toggle="modal">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane" id="tab-owner">
+                        <h6>Login</h6>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn large-btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-link">Forgot Password?</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+
+        <!-- JavaScripts libraries-->
+        <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+
+    </body>
+
+    </html>

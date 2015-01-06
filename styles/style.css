@@ -133,4 +133,11 @@ ul.nav-tabs.nav-justified>.active>a, ul.nav-tabs.nav-justified>.active>a:hover {
     ul.nav-tabs a span.tab-text {
         display: inline;
     }
+
+    [type="radio"] {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+    }
 }

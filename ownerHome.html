@@ -64,13 +64,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#tab-owner" data-toggle="tab">
+                    <a href="#tab-settings" data-toggle="tab">
                         <span class="glyphicon glyphicon-cog"></span>
                         <span class="tab-text">App Settings</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#tab-owner" data-toggle="tab">
+                    <a href="#tab-contacts" data-toggle="tab">
                         <span class="glyphicon glyphicon-user"></span>
                         <span class="tab-text">Contacts</span>
                     </a>
@@ -380,6 +380,17 @@
                         </div>
                     </form>
                 </div>
+                <div class="tab-pane" id="tab-settings">
+                    <h4>Enable Proxy to Update/Create Reservations</h4>
+                    <form>
+                        <label for="yes">Yes</label>
+                        <input type="radio" onclick="enableProxy()" name="Enable Proxy" value="yes" id="yes">
+                        <br>
+                        <label for="no">No</label>
+                        <input type="radio" name="Enable Proxy" value="no" id="no"checked>
+                        <br>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -441,7 +452,20 @@
                 <button type="submit" class="btn large-btn btn-primary">Update Reservation</button>
                 <button type="cancel" class="btn large-btn btn-primary">Cancel Reservation</button>
             </div>
-        </form></dialog>
+        </form>
+    </dialog>
+
+    <dialog id="enableProxy"><h4 style="text-align:center">Enter the User Name.</h4>
+        <div class="button-group">
+            <div class="col-sm-9">
+                <div class="form-group">
+                    <label for="userName">UserName</label>
+                    <input type="text" class="form-control" id="userName" placeholder="John Doe">
+                </div>
+            </div>
+            <button type="submit" class="btn large-btn btn-primary">Add Proxy</button>
+            </div>
+        </dialog>
 
     <!-- JavaScripts libraries-->
     <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
@@ -451,7 +475,11 @@
         {
             document.getElementById("myDialog").showModal();
         }
-
+    </script>
+    <script>
+        function enableProxy(){
+            document.getElementById("enableProxy").showModal();
+        }
     </script>
 
 

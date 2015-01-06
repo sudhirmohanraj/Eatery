@@ -1,488 +1,488 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Eatery</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
-    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Eatery</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
 
-<body>
-    <header>
-        <div class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <span class="glyphicon glyphicon-cutlery"></span>Eatery</a>
-                </div>
-                <div class="navbar-collapse collapse" style="height: 1px;">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link1</a>
-                        </li>
-                        <li><a href="#">Logout</a>
-                        </li>
-                    </ul>
-
-
-                </div>
-                <!--/.navbar-collapse -->
-            </div>
-        </div>
-    </header>
-
-    <section>
-        <div class="container" id="ownerHome">
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active">
-                    <a href="#tab-reservation" data-toggle="tab">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                        <span class="tab-text">Reservations</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#tab-seating" data-toggle="tab">
-                        <span class="glyphicon glyphicon-th"></span>
-                        <span class="tab-text">Seating</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#tab-owner" data-toggle="tab">
-                        <span class="glyphicon glyphicon-list"></span>
-                        <span class="tab-text">Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#tab-settings" data-toggle="tab">
-                        <span class="glyphicon glyphicon-cog"></span>
-                        <span class="tab-text">App Settings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#tab-contacts" data-toggle="tab">
-                        <span class="glyphicon glyphicon-user"></span>
-                        <span class="tab-text">Contacts</span>
-                    </a>
-                </li>
-            </ul>
-            <div id="content" class="tab-content">
-                <div class="tab-pane active" id="tab-reservation">
-                    <h6>Reservation List</h6>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search Reservation" id="inputSearch">
-                        <div class="input-group-btn">
-                            <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
-                            </button>
-                        </div>
+    <body>
+        <header>
+            <div class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-cutlery"></span>Eatery</a>
                     </div>
-                    <ul class="pagination pull-right">
-                        <li><a href="#">&laquo;</a>
-                        </li>
-                        <li class="active"><a href="#">1</a>
-                        </li>
-                        <li><a href="#">2</a>
-                        </li>
-                        <li><a href="#">3</a>
-                        </li>
-                        <li><a href="#">4</a>
-                        </li>
-                        <li><a href="#">5</a>
-                        </li>
-                        <li><a href="#">&raquo;</a>
-                        </li>
-                    </ul>
-                    <table class="table table-condensed table-striped">
-                        <thead>
-                            <tr>
-                                <th>CNF#</th>
-                                <th>Name</th>
-                                <th>Date</th>
-                                <th>#</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DA83CD</td>
-                                <td>Praveen Salitra</td>
-                                <td>05/10/2014 1:30PM</td>
-                                <td>4</td>
-                                <td>
-                                    <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
-                                        <span class="glyphicon glyphicon-share"></span>
-                                        <span class="btn-text">Details</span>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="navbar-collapse collapse" style="height: 1px;">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link1</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <!--/.navbar-collapse -->
                 </div>
-                <div class="tab-pane" id="tab-seating">
-                    <h6>Seating Area</h6>
-                    <div class="container">
-                        <div class="col-xs-12 col-sm-6">
-                            <table class="table table-condensed table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Table#</th>
-                                        <th>Size</th>
-                                        <th>Status</th>
-                                        <th>Since</th>
-                                        <th>CNF#</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Occupied</td>
-                                        <td>1:30PM</td>
-                                        <td>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Available</td>
-                                        <td>-</td>
-                                        <td>
-                                            <span class="btn-filler"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Occupied</td>
-                                        <td>1:30PM</td>
-                                        <td>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Occupied</td>
-                                        <td>1:30PM</td>
-                                        <td>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Available</td>
-                                        <td>-</td>
-                                        <td>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Occupied</td>
-                                        <td>1:30PM</td>
-                                        <td>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Available</td>
-                                        <td>-</td>
-                                        <td>
-                                            <span class="btn-filler"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>4</td>
-                                        <td>Available</td>
-                                        <td>-</td>
-                                        <td>
-                                            <span class="btn-filler"></span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            </div>
+        </header>
+
+        <section>
+            <div class="container" id="ownerHome">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active">
+                        <a href="#tab-reservation" data-toggle="tab">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                            <span class="tab-text">Reservations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-seating" data-toggle="tab">
+                            <span class="glyphicon glyphicon-th"></span>
+                            <span class="tab-text">Seating</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-owner" data-toggle="tab">
+                            <span class="glyphicon glyphicon-list"></span>
+                            <span class="tab-text">Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-settings" data-toggle="tab">
+                            <span class="glyphicon glyphicon-cog"></span>
+                            <span class="tab-text">App Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-contacts" data-toggle="tab">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="tab-text">Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+                <div id="content" class="tab-content">
+                    <div class="tab-pane active" id="tab-reservation">
+                        <h6>Reservation List</h6>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Reservation" id="inputSearch">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="container">
-                                <div class="col-md-4">
-                                    <div class="seats img-rounded">
-                                        <p>Table # 1</p>
-                                        <p>Occupied</p>
-                                        <p>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </p>
+                        <ul class="pagination pull-right">
+                            <li><a href="#">&laquo;</a>
+                            </li>
+                            <li class="active"><a href="#">1</a>
+                            </li>
+                            <li><a href="#">2</a>
+                            </li>
+                            <li><a href="#">3</a>
+                            </li>
+                            <li><a href="#">4</a>
+                            </li>
+                            <li><a href="#">5</a>
+                            </li>
+                            <li><a href="#">&raquo;</a>
+                            </li>
+                        </ul>
+                        <table class="table table-condensed table-striped">
+                            <thead>
+                                <tr>
+                                    <th>CNF#</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>#</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DA83CD</td>
+                                    <td>Praveen Salitra</td>
+                                    <td>05/10/2014 1:30PM</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button onclick="viewDetails()" class="btn btn-primary" title="Open Details">
+                                            <span class="glyphicon glyphicon-share"></span>
+                                            <span class="btn-text">Details</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="tab-seating">
+                        <h6>Seating Area</h6>
+                        <div class="container">
+                            <div class="col-xs-12 col-sm-6">
+                                <table class="table table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Table#</th>
+                                            <th>Size</th>
+                                            <th>Status</th>
+                                            <th>Since</th>
+                                            <th>CNF#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Occupied</td>
+                                            <td>1:30PM</td>
+                                            <td>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Available</td>
+                                            <td>-</td>
+                                            <td>
+                                                <span class="btn-filler"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Occupied</td>
+                                            <td>1:30PM</td>
+                                            <td>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Occupied</td>
+                                            <td>1:30PM</td>
+                                            <td>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Available</td>
+                                            <td>-</td>
+                                            <td>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Occupied</td>
+                                            <td>1:30PM</td>
+                                            <td>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Available</td>
+                                            <td>-</td>
+                                            <td>
+                                                <span class="btn-filler"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>Available</td>
+                                            <td>-</td>
+                                            <td>
+                                                <span class="btn-filler"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="container">
+                                    <div class="col-md-4">
+                                        <div class="seats img-rounded">
+                                            <p>Table # 1</p>
+                                            <p>Occupied</p>
+                                            <p>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="seats img-rounded">
-                                        <p>Table # 1</p>
-                                        <p>Occupied</p>
-                                        <p>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </p>
+                                    <div class="col-md-4">
+                                        <div class="seats img-rounded">
+                                            <p>Table # 1</p>
+                                            <p>Occupied</p>
+                                            <p>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="seats img-rounded">
-                                        <p>Table # 1</p>
-                                        <p>Occupied</p>
-                                        <p>
-                                            <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
-                                                <span class="btn-text">DA83CD</span>
-                                            </button>
-                                        </p>
+                                    <div class="col-md-4">
+                                        <div class="seats img-rounded">
+                                            <p>Table # 1</p>
+                                            <p>Occupied</p>
+                                            <p>
+                                                <button onclick="viewDetails()" class="btn btn-primary" title="Open Details When Clicked on Confirmation Number">
+                                                    <span class="btn-text">DA83CD</span>
+                                                </button>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane" id="tab-owner">
-                    <h6>Login</h6>
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@domain.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn large-btn btn-primary">Submit</button>
-                            <button type="button" class="btn btn-link">Forgot Password?</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane" id="tab-settings">
-                    <h4>Enable Proxy to Update/Create Reservations</h4>
-                    <form>
-                        <label for="yes">Yes</label>
-                        <input type="radio" onclick="enableProxy()" name="Enable Proxy" value="yes" id="yes">
-                        <br>
-                        <label for="no">No</label>
-                        <input type="radio" name="Enable Proxy" value="no" id="no"checked>
-                        <br>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer></footer>
-
-    <dialog id="myDialog"><h4 style="text-align:center">Reservation Details</h4>
-        <form role="form">
-            <div class="form-group">
-                <label for="confirmationNumber">Confirmation Number</label>
-                <input type="confirmNumber" class="form-control" id="confirmationNumberEditReservation" placeholder="Confirmation Number" readonly>
-            </div>
-            <div class="form-group">
-                <label for="reservationStatus">Reservation Status</label>
-                <input type="reserveStatus" class="form-control" id="reservationStatus" placeholder="Reservation Status" readonly>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="reserveDate">Date</label>
-                        <input type="date" class="form-control" id="reserveDateEditReservation" placeholder="MM/DD/YYYY">
+                    <div class="tab-pane" id="tab-owner">
+                        <h6>Login</h6>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn large-btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-link">Forgot Password?</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="reserveTime">Time</label>
-                        <input type="time" class="form-control" id="reserveTimeEditReservation" placeholder="HH:MM">
+                    <div class="tab-pane" id="tab-settings">
+                        <h4>Enable Proxy to Update/Create Reservations</h4>
+                        <form>
+                            <label for="yes">Yes</label>
+                            <input type="radio" onclick="enableProxy()" name="Enable Proxy" value="yes" id="yes">
+                            <br>
+                            <label for="no">No</label>
+                            <input type="radio" name="Enable Proxy" value="no" id="no"checked>
+                            <br>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="reserveName">Name</label>
-                <input type="text" class="form-control" id="reserveNameEditReservation" placeholder="Enter Your Name">
-            </div>
+        </section>
+        <footer></footer>
 
-            <div class="form-group">
-                <label for="reservePhone">Phone</label>
-                <input type="tel" class="form-control" id="reservePhoneEditReservation" placeholder="Enter Your Phone">
-            </div>
-            <div class="form-group">
-                <label for="reserveEmail">Email</label>
-                <input type="email" class="form-control" id="reserveEmailEditReservation" placeholder="example@domain.com">
-            </div>
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label for="reserveSize">Party Size</label>
-                        <input type="number" class="form-control" id="reserveSizeEditReservation" placeholder="# Guests">
-                    </div>
-                </div>
-                <div class="col-sm-9">
-                    <div class="form-group">
-                        <label for="reserveSpecial">Special Need</label>
-                        <input type="email" class="form-control" id="reserveSpecialEditReservation" placeholder="e.g. Birthday, Anniversary etc.">
-                    </div>
-                </div>
-            </div>
-            <div class="button-group">
-                <button type="submit" class="btn large-btn btn-primary">Update Reservation</button>
-                <button type="cancel" class="btn large-btn btn-primary">Cancel Reservation</button>
-            </div>
-        </form>
-    </dialog>
-
-    <dialog id="enableProxy"><h4 style="text-align:center">Enter the User Name.</h4>
-        <div class="button-group">
-            <div class="col-sm-9">
+        <dialog id="myDialog"><h4 style="text-align:center">Reservation Details</h4>
+            <form role="form">
                 <div class="form-group">
-                    <label for="userName">UserName</label>
-                    <input type="text" class="form-control" id="userName" placeholder="John Doe">
+                    <label for="confirmationNumber">Confirmation Number</label>
+                    <input type="confirmNumber" class="form-control" id="confirmationNumberEditReservation" placeholder="Confirmation Number" readonly>
                 </div>
-            </div>
-            <button type="submit" class="btn large-btn btn-primary">Add Proxy</button>
-            </div>
+                <div class="form-group">
+                    <label for="reservationStatus">Reservation Status</label>
+                    <input type="reserveStatus" class="form-control" id="reservationStatus" placeholder="Reservation Status" readonly>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="reserveDate">Date</label>
+                            <input type="date" class="form-control" id="reserveDateEditReservation" placeholder="MM/DD/YYYY">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="reserveTime">Time</label>
+                            <input type="time" class="form-control" id="reserveTimeEditReservation" placeholder="HH:MM">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reserveName">Name</label>
+                    <input type="text" class="form-control" id="reserveNameEditReservation" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="reservePhone">Phone</label>
+                    <input type="tel" class="form-control" id="reservePhoneEditReservation" placeholder="Enter Your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="reserveEmail">Email</label>
+                    <input type="email" class="form-control" id="reserveEmailEditReservation" placeholder="example@domain.com">
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="reserveSize">Party Size</label>
+                            <input type="number" class="form-control" id="reserveSizeEditReservation" placeholder="# Guests">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="form-group">
+                            <label for="reserveSpecial">Special Need</label>
+                            <input type="email" class="form-control" id="reserveSpecialEditReservation" placeholder="e.g. Birthday, Anniversary etc.">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn large-btn btn-primary">Update Reservation</button>
+                    <button type="cancel" class="btn large-btn btn-primary">Cancel Reservation</button>
+                </div>
+            </form>
         </dialog>
 
-    <!-- JavaScripts libraries-->
-    <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        function viewDetails()
-        {
-            document.getElementById("myDialog").showModal();
-        }
-    </script>
-    <script>
-        function enableProxy(){
-            document.getElementById("enableProxy").showModal();
-        }
-    </script>
+        <dialog id="enableProxy"><h4 style="text-align:center">Enter the User Name.</h4>
+            <div class="button-group">
+                <div class="col-sm-9">
+                    <div class="form-group">
+                        <label for="userName">UserName</label>
+                        <input type="text" class="form-control" id="userName" placeholder="John Doe">
+                    </div>
+                </div>
+                <button type="submit" class="btn large-btn btn-primary">Add Proxy</button>
+                </div>
+            </dialog>
+
+        <!-- JavaScripts libraries-->
+        <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            function viewDetails()
+            {
+                document.getElementById("myDialog").showModal();
+            }
+        </script>
+        <script>
+            function enableProxy(){
+                document.getElementById("enableProxy").showModal();
+            }
+        </script>
 
 
-</body>
+    </body>
 
-</html>
+    </html>

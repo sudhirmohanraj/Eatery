@@ -8,5 +8,6 @@ Edit/Cancel a Reservation
 			Have a button to cancel it.
 				cancel the reservation and notify the user it has been deleted.
 3. Owner clicks on the details tab, a form with all the information from the reservation status should be displayed.
-   similarly on confirmation tab.
+   Similarly on confirmation tab.
+   App Settings Added functionality to add a user as proxy.
 
